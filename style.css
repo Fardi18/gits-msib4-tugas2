@@ -1,0 +1,56 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* footer */
+footer {
+  background-color: #252525;
+  min-height: 60vh;
+}
+
+footer .copytext {
+  padding-top: 120px;
+}
+
+/* navbar */
+.nav-link:hover {
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+.bgcolor {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* hero */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+/* about */
+.me {
+  border-radius: 100px;
+  height: 400px;
+  width: 300px;
+}
+
+/* portofolio */
+.portofolio-item img {
+  height: 250px;
+}
