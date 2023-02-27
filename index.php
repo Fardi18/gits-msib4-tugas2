@@ -1,3 +1,13 @@
+<?php
+$nama = "Fardi Khalik Ramadhan";
+
+$services = ["Front-End Web Development", "UIUX Design", "No Coding No Cry"];
+
+$portofolio = ["Menthy", "SkilMovie", "Todo List", "Mony", "Interio", "Travelin"];
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,6 +32,9 @@
     />
     <!-- custom css -->
     <link rel="stylesheet" href="style.css" />
+    <!-- data aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
   <body>
     <!-- navbar -->
@@ -77,7 +90,7 @@
         <div class="row">
           <div class="col text-center">
             <h3 class="text-white fw-semibold mb-2">Holaaa</h3>
-            <h1 class="text-white fw-bold mb-4">Saya Fardi Khalik Ramadhan</h1>
+            <h1 class="text-white fw-bold mb-4">Saya <?= $nama ?></h1>
             <p class="text-white mb-5 text-opacity-75">
               Selamat datang di personal website saya
             </p>
@@ -93,20 +106,20 @@
     <section class="about py-5" id="about">
       <div class="container py-4">
         <div class="row min-vh-100 align-items-center align-content-center">
-          <div class="col-md-6 mt-5 mt-md-0">
+          <div class="col-md-6 mt-5 mt-md-0" data-aos="zoom-out-left">
             <div class="about-img text-center">
               <img src="assets/me.jpg" alt="foto aing" class="me" />
             </div>
           </div>
-          <div class="col-md-6 order-md-first mt-5 mt-md-0">
+          <div class="col-md-6 order-md-first mt-5 mt-md-0" data-aos="zoom-out-right">
             <div class="about-text">
               <p class="text-muted mb-1">Hola</p>
               <h1 class="text-primary text-uppercase fs-1 fw-bold">
                 Front-End Web Developer & UIUX Designer
               </h1>
-              <h2 class="fs-4">Fardi Khalik Ramadhan</h2>
+              <h2 class="fs-4"><?= $nama ?></h2>
               <p class="mt-4 text-muted">
-                Saya Fardi Khalik Ramadhan akrab dipanggil Fardi, saya adalah
+                Saya <?= $nama ?> akrab dipanggil Fardi, saya adalah
                 mahasiswa semester 6 Program Studi Teknik Informatika di
                 Institut Teknologi Indonesia. Saya tertarik dalam dunia
                 pengembangan website terutama Front-End Web Development. Selain
@@ -141,22 +154,22 @@
           </div>
           <div class="row text-center">
             <div class="col-md-6 col-lg-4 mb-3">
-              <div class="services-item shadow-sm p-4 rounded bg-white">
+              <div class="services-item shadow-sm p-4 rounded bg-white" data-aos="fade-right" data-aos-delay="100">
                 <div class="icon my-3">
                   <i class="fa-solid fa-code fs-2 text-primary"></i>
                 </div>
-                <h3 class="fs-5 py-2">Front-End Web Development</h3>
+                <h3 class="fs-5 py-2"><?= $services[0] ?></h3>
                 <p class="text-muted">
                   Membuat website khususnya bagian Front-End Development
                 </p>
               </div>
             </div>
             <div class="col-md-6 col-lg-4 mb-3">
-              <div class="services-item shadow-sm p-4 rounded bg-white">
+              <div class="services-item shadow-sm p-4 rounded bg-white" data-aos="fade-right" data-aos-delay="200">
                 <div class="icon my-3">
                   <i class="fa-brands fa-figma fs-2 fw-bold text-primary"></i>
                 </div>
-                <h3 class="fs-5 py-2">UIUX Design</h3>
+                <h3 class="fs-5 py-2"><?= $services[1] ?></h3>
                 <p class="text-muted">
                   Membuat UIUX desain website/mobile dengan tools figma dan lain
                   sebagainya
@@ -164,11 +177,11 @@
               </div>
             </div>
             <div class="col-md-6 col-lg-4 mb-3">
-              <div class="services-item shadow-sm p-4 rounded bg-white">
+              <div class="services-item shadow-sm p-4 rounded bg-white" data-aos="fade-right" data-aos-delay="300">
                 <div class="icon my-3">
                   <i class="fa-brands fa-wordpress fs-2 text-primary"></i>
                 </div>
-                <h3 class="fs-5 py-2">No Coding No Cry</h3>
+                <h3 class="fs-5 py-2"><?= $services[2] ?></h3>
                 <p class="text-muted">
                   Meembuat website tanpa coding dengan tools seperti Wordpress,
                   Webflow & Framer
@@ -192,13 +205,13 @@
         </div>
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-3">
-            <div class="portofolio-item">
+            <div class="portofolio-item" data-aos="fade-right" data-aos-delay="100">
               <img
                 src="assets/article.png"
                 alt=""
                 class="w-100 img-thumbnail"
               />
-              <h3 class="fs-4 my-2">Menthy</h3>
+              <h3 class="fs-4 my-2"><?= $portofolio[0] ?></h3>
               <p class="text-muted">
                 Sebuah website yang menyediakan artikel dan daftar psikolog
                 untuk mereka yang mengalami gangguan kesehatan mental
@@ -211,13 +224,13 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-3">
-            <div class="portofolio-item">
+            <div class="portofolio-item" data-aos="fade-right" data-aos-delay="200">
               <img
                 src="assets/skillmovile.png"
                 alt=""
                 class="w-100 img-thumbnail"
               />
-              <h3 class="fs-4 my-2">SkilMovile</h3>
+              <h3 class="fs-4 my-2"><?= $portofolio[1] ?></h3>
               <p class="text-muted">
                 Sebuah website yang menyediakan informasi dari film populer
                 dengan menggunakan API TMDB
@@ -230,13 +243,13 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-3">
-            <div class="portofolio-item">
+            <div class="portofolio-item" data-aos="fade-right" data-aos-delay="300">
               <img
                 src="assets/todolist.png"
                 alt=""
                 class="w-100 img-thumbnail"
               />
-              <h3 class="fs-4 my-2">Todo List</h3>
+              <h3 class="fs-4 my-2"><?= $portofolio[2] ?></h3>
               <p class="text-muted">
                 Website Todo List dengan menggunakan Library React Js dan React
                 Redux
@@ -247,9 +260,9 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-3">
-            <div class="portofolio-item">
+            <div class="portofolio-item" data-aos="fade-right" data-aos-delay="400">
               <img src="assets/mony.png" alt="" class="w-100 img-thumbnail" />
-              <h3 class="fs-4 my-2">Mony</h3>
+              <h3 class="fs-4 my-2"><?= $portofolio[3] ?></h3>
               <p class="text-muted">
                 Mony adalah UIUX Design sebuah mobile App e-wallet
               </p>
@@ -261,13 +274,13 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-3">
-            <div class="portofolio-item">
+            <div class="portofolio-item" data-aos="fade-right" data-aos-delay="500">
               <img
                 src="assets/interio.png"
                 alt=""
                 class="w-100 img-thumbnail"
               />
-              <h3 class="fs-4 my-2">Interio</h3>
+              <h3 class="fs-4 my-2"><?= $portofolio[4] ?></h3>
               <p class="text-muted">
                 UI Design sebuah website yang bernama Interio yang menyediakan
                 kebutuhan perlengkapan rumah
@@ -280,13 +293,13 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-3">
-            <div class="portofolio-item">
+            <div class="portofolio-item" data-aos="fade-right" data-aos-delay="600">
               <img
                 src="assets/travelin.png"
                 alt=""
                 class="w-100 img-thumbnail"
               />
-              <h3 class="fs-4 my-2">Travelin</h3>
+              <h3 class="fs-4 my-2"><?= $portofolio[5] ?></h3>
               <p class="text-muted">
                 UI Design sebuah mobile apps untuk mereka yang menyukai
                 traveling
@@ -435,6 +448,12 @@
 
     <!-- custom js -->
     <script src="index.js"></script>
+
+    <!-- data aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
 
